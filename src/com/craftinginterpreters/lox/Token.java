@@ -2,7 +2,9 @@ package com.craftinginterpreters.lox;
 
 public class Token {
 	final TokenType type;
+	// lexeme is the substring unit we identify as a token
 	final String lexeme;
+	// literals can be identifier, number or string
 	final Object literal;
 	// in error handling, we would like to show location in report
 	final int line;
