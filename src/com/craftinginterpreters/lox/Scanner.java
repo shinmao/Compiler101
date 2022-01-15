@@ -88,9 +88,6 @@ public class Scanner {
 	    	  if(advance_match('/')) {
 	    		  // read until the end of the line
 	    		  while(lookahead() != '\n' && !isAtEnd()) advance();
-	    	  } else if (isAlpha(c)){
-	    		  // assume the lexeme starting with letter or underscore is identifier
-	    		  identifier();
 	    	  } else {
 	    		  addToken(SLASH);
 	    	  }
