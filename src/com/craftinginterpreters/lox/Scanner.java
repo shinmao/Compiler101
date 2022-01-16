@@ -85,10 +85,11 @@ public class Scanner {
 	    	  break;
 	      case '/':
 	    	  // handle the case of comments
-	    	  if(advance_match('/')) {
+	    	  if(advance_match('/')) {   // now, current points new char after second slash
 	    		  // read until the end of the line
-	    		  while(lookahead() != '\n' && !isAtEnd()) advance();
-	    	  } else {
+	    		  while(lookahead() != '\n' && !isAtEnd()) {
+	    			  advance();
+	    		  }
 	    		  addToken(SLASH);
 	    	  }
 	    	  break;
@@ -199,7 +200,7 @@ public class Scanner {
 	}
 
 	private char advance() {
-		// get next character
+		// return value would source.charAt(current) then current += 1
 		return source.charAt(current++);
 	}
 	
