@@ -1,0 +1,50 @@
+     For this first assignment, you are going to use Lex to 
+write a preprocessor to take input text and make it look 
+presentable. This is to be your own individual effort. The 
+output must adhere to the following rules: 
+
+     The input text should be output as lines with length as 
+close as possible to 60 characters without exceeding this 
+number. Words should not be cut to meet this requirement. Be 
+careful to keep special symbols that can appear at the end 
+of a word (period, question mark, exclamation point, 
+semicolon, comma, colon, close parenthesis, close quote), 
+symbols that can appear within words (apostrophe, at and 
+perioe), and symbols that can appear at the start of a word 
+(open parenthesis, open quote) on the same line as the word. 
+If a word contains a hyphen, that hyphen should be used to 
+break a word across lines IF the word is too long for the 
+line and the part of the word up to and including the hyphen 
+fits. 
+
+     In the input text, paragraphs are separated by one or 
+more blank lines. For the input file, a blank line is 
+defined as zero or more blanks and tabs followed by an end 
+of line marker. In the output text, there must be a single 
+line separating paragraph. In addition, the first line of 
+each paragraph should be indented 5 characters. 
+
+     No line should begin with blanks unless it is the start 
+of a paragraph. 
+
+     Multiple blanks should be transformed to a single 
+blank. 
+
+     A line starting with the star character indicates a 
+list item. Everything on the line is part of the given list 
+item. A list item starts with the character indented 5 
+spaces followed by a single space then the item. The item 
+itself needs to be cut across lines adhering to the 60 
+character rule. The second and following lines will be 
+indented 7 spaces shown in the online examples. 
+
+     Any text following the percent symbol to the end of the 
+line should be removed. 
+
+     Any other special characters that are not mentioned 
+above should be removed. Note Be sure you are using Lex 
+effectively. If you are writing a lot of CJava code to 
+manipulate the matched input, you are not making Lex do the 
+work. 
+
+     
