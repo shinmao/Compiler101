@@ -1,0 +1,12 @@
+A1abC -> a B2bdeC
+B2bdeC -> a A1abC
+A1abC -> A1
+A1 -> b B2bdeC
+B2bdeC ->
+aaaaa
+aa
+bbbb
+aaaaaaa
+ccccc
+aababaaab
+aabaaaab

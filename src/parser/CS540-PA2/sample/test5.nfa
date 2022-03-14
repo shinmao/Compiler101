@@ -1,0 +1,13 @@
+A1 -> a D1
+B1 -> b C1
+A1 -> B1
+D1 ->
+A1 -> a A1
+A1 -> b A1
+C1 -> b D1
+abaabbbabababababababab;
+ababababaaabbb
+a
+bb
+ababababbbbbbbbaaaaabb
+ababbbaaabaa
