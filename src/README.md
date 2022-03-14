@@ -1,4 +1,6 @@
 # README
-`com/` include the practice from book of *crafting interpreters*.  
+`com/` includes the practice from book of *crafting interpreters*.  
 
-`scanner/` include the practice of scanner implementation.  
+`scanner/` includes the practice of scanner implementation.  
+
+`parser/` includes the practice of parser implementation.  

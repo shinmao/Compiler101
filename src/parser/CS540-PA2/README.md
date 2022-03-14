@@ -49,9 +49,17 @@ string' -> epsilon                   {EOL}
 ```  
 I also list the predict set on the righthandside to make sure they don't have conflict (if conflict, it means not LL1).
 
+## 3 - Write a RDP based on LL1 grammar
+For example, https://github.com/shinmao/Compiler101/blob/main/src/parser/CS540-PA2/parser.c#L163  
+The code at line 163 showed the rule for `production'`.
+
 ## 4 - NFA transition table  
 ![](./NFA_table.png)  
 The indexes of two dimensions would be string; therefore, I design a two dimensional dictionary.
+
+## 5 - Use NFA table to validate strings
+https://github.com/shinmao/Compiler101/blob/main/src/parser/CS540-PA2/parser.c#L52  
+At line 52, `trans1` was used to see whether there we can transite to another state with current input. `trans2` was used in the case that state can transite without any input, which is called `epsilon-transition`.
 
 ## Feedback
 I spend most of the time to implement data structure because C doesn't provide dictionary by default. Maybe some days I would need to prepare my own data structure implementation in advance:)
